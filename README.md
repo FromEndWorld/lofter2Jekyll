@@ -2,7 +2,7 @@
 
 使用[LOFTER2Hexo](https://github.com/boboidream/LOFTER2Hexo)修改而成。
 
-实际上原脚本已经支持Jekyll，Jekyll和Hexo的md格式上也没有什么本质区别，不过我看原作者上次维护是2017年，所以单独建个repo。
+实际上原脚本已经支持Jekyll，Jekyll和Hexo的md格式上也没有什么本质区别，但原作者上次维护是2017年，所以单独建个repo。
 
 ### 主要改动: 
 
