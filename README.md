@@ -28,7 +28,7 @@
 2. 安装项目
 
     ```
-    sudo npm install lofter2hexo -g
+    sudo npm install lofter2Jekyll -g
     ```
 
 ### 使用
