@@ -1,56 +1,27 @@
 {
-  "_from": "lofter2hexo",
-  "_id": "lofter2hexo@2.0.3",
-  "_inBundle": false,
-  "_integrity": "sha1-PccNRO5hW9KXUuBTXcg8jIDZnoY=",
-  "_location": "/lofter2hexo",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "lofter2hexo",
-    "name": "lofter2hexo",
-    "escapedName": "lofter2hexo",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "https://registry.npmjs.org/lofter2hexo/-/lofter2hexo-2.0.3.tgz",
-  "_shasum": "3dc70d44ee615bd29752e0535dc83c8c80d99e86",
-  "_spec": "lofter2hexo",
-  "_where": "C:\\Users\\GGPC\\Documents\\lofter",
-  "author": {
-    "name": "boboidream",
-    "email": "z644381492@gmail.com"
-  },
+  "name": "lofter2Jekyll",
+  "version": "1.0.0",
+  "description": "将 LOFTER 导出的 XML 文件转换为 Markdown 文件工具。",
+  "main": "readxml.js",
   "bin": {
     "readxml": "bin/readxml.js"
   },
-  "bugs": {
-    "url": "https://github.com/boboidream/LOFTER2Hexo/issues"
+  "scripts": {
+    "start": "bin/readxml.js"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "commander": "^2.9.0",
     "image-downloader": "^2.0.3",
     "to-markdown": "3.0.0",
     "xml2js": "0.4.16"
   },
-  "deprecated": false,
-  "description": "一个将 LOFTER 导出的 XML 文件转换为适合 Hexo 解析的 Markdown 文件工具。",
-  "homepage": "https://zwb.io",
-  "license": "MIT",
-  "main": "readxml.js",
-  "name": "lofter2hexo",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boboidream/LOFTER2Hexo.git"
+    "url": "git+https://github.com/FromEndWorld/lofter2Jekyll.git"
   },
-  "scripts": {
-    "start": "bin/readxml.js"
-  },
-  "version": "2.0.3"
+  "author": "fromendworld",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FromEndWorld/lofter2Jekyll/issues"
+  }
 }

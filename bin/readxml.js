@@ -1,9 +1,9 @@
 #! /usr/bin/env node
 
 /*
- * Author: boboidream
- * Version: 2.0.3
- * Update: 20170415
+ * Author: fromendworld
+ * Version: 1.0.0
+ * Update: 20190615
  */
 
 var fs = require('fs'),
@@ -14,7 +14,7 @@ var fs = require('fs'),
     argv = require('commander')
 
 // init commander
-argv.version('2.0.3')
+argv.version('1.0.0')
     .usage('[options]')
     .option('-i, --input <lang>', 'lofter xml file')
     .option('-n, --notag', 'Without tags')
@@ -31,7 +31,7 @@ var path = require('path'),
     author = argv.author || ''
 
 // main object
-var lofter2hexo = {
+var lofter2Jekyll = {
     run: function() {
         var lib = this.lib
 
@@ -127,8 +127,6 @@ function parsearticle(article) {
                             'date: ' + newDate + '\n' +
                             'author: "' + author + '"\n' +
                             'comments: true\n' +
-//                            'catalog: 随笔' + '\n' +
-//                            'tags: \n' + res + '\n---\n'
                             'tags: [' + tags + ']\n\n---\n'
                             
             } else {
@@ -137,7 +135,6 @@ function parsearticle(article) {
                         'layout: post\n' +
                         'title: ' + article.title + '\n' +
                         'date: ' + newDate + '\n' +
-                        'categories: 随笔' + '\n' + 
                         'tags: [' + tags + ']\n\n---\n'
             }
 
@@ -154,7 +151,6 @@ function parsearticle(article) {
             if (imgArray && imgArray.length) {
                 imgArray.forEach(function(imgURL) {
                     imgURL = imgURL.match(/http.*\.(jpg|jpeg|gif|png)/)[0]
- //                   imgURL = imgURL.match(/http.*\.jpg|http.*\.jpeg|http.*\.png|http.*\.gif/)[0]
                     content = content.replace(/!\[(.*?)\]\((.*?)\)/, function(whole, imgName, url) {
                         _downloadImg(imgURL, imgName)
                         return `![图片](./img/${url.split('/').pop()})`
@@ -245,4 +241,4 @@ Date.prototype.Format = function(fmt) {
 }
 
 
-lofter2hexo.run()
+lofter2Jekyll.run()
