@@ -1,10 +1,10 @@
 # lofter2Jekyll
 
-本脚本用于将lofter的导出的xml文件拆分为可读、可再发布的md文档，并支持下载其中的图片。
+本工具用于将lofter的导出的xml文件拆分为可读、可再发布的md文档，并支持下载其中的图片。
 
 使用[LOFTER2Hexo](https://github.com/boboidream/LOFTER2Hexo)修改而成。
 
-实际上原脚本已经支持Jekyll，Jekyll和Hexo的md格式上也没有什么本质区别，但原作者上次维护是2017年，所以单独建个repo和重新发布一下。
+实际上原版已经支持Jekyll，Jekyll和Hexo的md格式上也没有什么本质区别，但原作者上次维护是2017年，所以单独建个repo重新发布一下。
 
 ### 主要改动: 
 
@@ -63,9 +63,11 @@ readxml -n -a endworld
 # 解析当前目录下 LOFTER.xml 文件，生成不带 Tags 标签的 Markdown 文件，头部 author: endworld
 ```
 
-## 其他脚本
+## 其他选项
 
-功能类似的脚本[lofter2Hexo](https://github.com/alicewish/Lofter2Hexo)，墨问太太的脚本基于Python，这个基于JS。
+另有功能类似的脚本[lofter2Hexo](https://github.com/alicewish/Lofter2Hexo)大家可以试试。
+
+墨问太太的脚本基于Python，这个基于JS。
 
 这个的优点大概是下载图片比较利索，直接根据图片URL下载并且链接到md文档中。
 
