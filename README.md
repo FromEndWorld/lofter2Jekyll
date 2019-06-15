@@ -22,9 +22,46 @@
 ## 使用说明
 
 ### 安装
-### 使用
-### 
 
+1. 安装 node.js → [Node.js 下载](https://nodejs.org/en/download/)
+
+2. 安装项目
+
+    ```
+    sudo npm install lofter2hexo -g
+    ```
+
+### 使用
+
+1. 将 LOFTER 导出的 XML 文件命名为: `LOFTER.xml`
+
+2. `LOFTER.xml` 在所在文件夹打开命令行，输入 `readxml` 回车运行
+
+3. 程序会生成 `LOFTER` 文件夹并在其中写入所有Markdown文档
+
+4. 将图片下载至 `LOFTER/img` 文件夹
+
+5. 以上运行过程会在终端打印出日志
+
+### 选项
+
+```
+  Usage: readxml [options]
+
+  Options:
+
+    -h, --help           output usage information
+    -V, --version        output the version number
+    -i, --input <lang>   xml 文件路径，例如：`/Github/test.xml`
+    -n, --notag          头部不生成 tags 标签（以避免生成太多 `Tags` 造成的不美观）
+    -a, --author <lang>  设置 author （xml中无此字段）
+```
+例如
+
+```
+readxml -n -a endworld
+# 解析当前目录下 LOFTER.xml 文件，生成不带 Tags 标签的 Markdown 文件，头部 author: endworld
+```
 
 ## 其他脚本
 
