@@ -23,6 +23,11 @@
 
 ### 安装
 
+publish没搞好，崩溃中【。
+<!--
+
+
+
 1. 安装 node.js → [Node.js 下载](https://nodejs.org/en/download/)
 
 2. 安装项目
@@ -30,6 +35,8 @@
     ```
     npm install lofter2Jekyll -g
     ```
+-->
+
 
 ### 使用
 
