@@ -1,10 +1,10 @@
-# lofter2Jekyll
+# lofter2jekyll
 
 本工具用于将lofter的导出的xml文件拆分为可读、可再发布的md文档，并支持下载其中的图片。
 
 使用[LOFTER2Hexo](https://github.com/boboidream/LOFTER2Hexo)修改而成。
 
-实际上原版已经支持Jekyll，Jekyll和Hexo的md格式上也没有什么本质区别，但原作者上次维护是2017年，所以单独建个repo重新发布一下。
+实际上原版已经支持jekyll，jekyll和Hexo的md格式上也没有什么本质区别，但原作者上次维护是2017年，所以单独建个repo重新发布一下。
 
 ### 主要改动: 
 
@@ -33,7 +33,7 @@ publish没搞好，崩溃中【。
 2. 安装项目
 
     ```
-    npm install lofter2Jekyll -g
+    npm install lofter2jekyll -g
     ```
 -->
 

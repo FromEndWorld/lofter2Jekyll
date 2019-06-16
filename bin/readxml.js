@@ -18,7 +18,7 @@ argv.version('1.0.0')
     .usage('[options]')
     .option('-i, --input <lang>', 'lofter xml file')
     .option('-n, --notag', 'Without tags')
-    .option('-j, --jekyll', 'jekyll type')
+ //   .option('-j, --jekyll', 'jekyll type')
     .option('-a, --author <lang>', 'set author in header in jekyll type')
     .parse(process.argv)
 
@@ -31,7 +31,7 @@ var path = require('path'),
     author = argv.author || ''
 
 // main object
-var lofter2Jekyll = {
+var lofter2jekyll = {
     run: function() {
         var lib = this.lib
 
@@ -113,7 +113,7 @@ function parsearticle(article) {
         var tags = argv.notag ? '' : article.tag,
             newDate = newDate = new Date(parseInt(article.publishTime)).Format("yyyy-MM-dd hh:mm:ss")
             
-            if (argv.jekyll) {
+            if (argv.author) {
                 var res = ''
                 if (tags) {
                     tags.forEach(function(tag) {
@@ -241,4 +241,4 @@ Date.prototype.Format = function(fmt) {
 }
 
 
-lofter2Jekyll.run()
+lofter2jekyll.run()
