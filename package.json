@@ -1,6 +1,6 @@
 {
   "name": "lofter2jekyll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "将 LOFTER 导出的 XML 文件转换为 Markdown 文件工具。",
   "main": "readxml.js",
   "bin": {
