@@ -39,9 +39,7 @@
 
 2. `LOFTER.xml` 在所在文件夹打开命令行，输入 `readxml` 回车运行
 
-3. 程序会生成 `LOFTER` 文件夹并在其中写入所有Markdown文档
-
-4. 将图片下载至 `LOFTER/img` 文件夹
+3. 程序会生成 `LOFTER` 文件夹并在其中写入所有Markdown文档，并将图片下载至 `LOFTER/img` 文件夹
 
 5. 以上运行过程会在终端打印出日志
 
