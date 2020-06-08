@@ -24,8 +24,10 @@
 ### 安装
 
 1. 安装 node.js → [Node.js 下载](https://nodejs.org/en/download/)
-
-2. 安装项目
+2. 打开命令行 
+   - [windows指南](https://zh.wikihow.com/%E6%89%93%E5%BC%80Windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6)
+   - [Mac指南](https://zh.wikihow.com/%E5%9C%A8Mac%E7%94%B5%E8%84%91%E4%B8%8A%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF)
+3. 输入如下内容安装这个脚本
 
     ```
     npm install lofter2jekyll -g
