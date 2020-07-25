@@ -8,10 +8,12 @@
 
 var fs = require('fs'),
     xml2js = require('xml2js'),
-    toMarkdown = require('to-markdown'),
+//    toMarkdown = require('to-markdown'),
     parser = new xml2js.Parser(),
     image_downloader = require('image-downloader'),
     argv = require('commander')
+    TurndownService = require('turndown') // for Node.js
+
 
 // init commander
 argv.version('1.0.0')
@@ -145,7 +147,7 @@ function parsearticle(article) {
         if (article.content) {
             var imgArray = []
 
-            content = toMarkdown(article.content.toString())
+            content = TurndownService(article.content.toString())
             imgArray = content.match(/!\[.*?\]\((.*?)\)/g)
 
             if (imgArray && imgArray.length) {
@@ -159,7 +161,7 @@ function parsearticle(article) {
             }
         } else if (article.photoLinks != null) {
 
-            content = toMarkdown(article.caption.toString()) + '\n\n'
+            content = TurndownService(article.caption.toString()) + '\n\n'
             var text = article.photoLinks[0],
                 imgArray = JSON.parse(text)
                 
@@ -174,7 +176,7 @@ function parsearticle(article) {
 
         } else if (article.caption != null) {
 
-            content = toMarkdown(article.caption.toString());
+            content = TurndownService(article.caption.toString());
 
         } else {
             console.log(article);
