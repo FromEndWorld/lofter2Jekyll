@@ -1,6 +1,6 @@
 {
   "name": "lofter2jekyll",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "将 LOFTER 导出的 XML 文件转换为 Markdown 文件工具。",
   "main": "readxml.js",
   "bin": {
@@ -10,9 +10,9 @@
     "start": "bin/readxml.js"
   },
   "dependencies": {
-    "commander": "^2.9.0",
+    "commander": "^2.20.3",
     "image-downloader": "^2.0.3",
-    "to-markdown": "3.0.0",
+    "turndown": "6.0.0",
     "xml2js": "0.4.16"
   },
   "repository": {
